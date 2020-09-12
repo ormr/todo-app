@@ -1,0 +1,49 @@
+.app-list-item {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+  padding: 1rem;
+  user-select: none;
+
+  .app-list-item--label {
+    padding-left: 15px;
+    cursor: pointer;
+  }
+
+  .app-list-item--input {
+    cursor: pointer;
+  }
+
+  &:hover {
+    .app-list-item--button {
+      display: block;
+    }
+  }
+
+  .app-list-item--button {
+    outline: none;
+    display: none;
+    border: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(../assets/svg/trash-icon.svg);
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.striked {
+  text-decoration: line-through;
+}

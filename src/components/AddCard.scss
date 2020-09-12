@@ -1,0 +1,33 @@
+.add-card {
+  padding: 1rem;
+  display: flex;
+  .add-card--input {
+    text-indent: 12px;
+    height: 32px;
+    width: 100%;
+    border: 1px solid #666;
+    border-right: 0;
+  }
+  
+  .add-card--button {
+    position: relative;
+    width: 64px;
+    background-color: #4ab0a8;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #666;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(../assets/svg/plus-icon.svg);
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
